@@ -1,11 +1,15 @@
 # SurfacePeeler
 Version 2 of the macro to extract the surface layer of 3D volumetric images
 
-This macro will take a sinlge or multi channel image, and generate a mask following the upper surface of a 3D volumetric image.
+[Link to SurfacePeeler Macro](https://raw.githubusercontent.com/DaleMoulding/SurfacePeeler/main/SurfacePeelerCombined_v205.ijm)
+
+This macro will take a single or multi channel image, and generate a mask following the upper surface of a 3D volumetric image.
 
 The mask can be positioned any height above or below the upper surface & can be any number of pixels thick.
 
 The mask moves up or down perpendicular to the surface following the local surface geometry.
+
+Each step takes only a few seconds, so the whole process is easy to fine tune, and you are presented with previews of each step to decide whether to repeat or proceed.
 
 ### Step 1 Threshold the image - choose a filter (Gaussian, Median etc) and threshold algorithm
 <img src="Images/001%20Combined%20multi%20channel%20image%20to%20threshold.JPG" width=50% height=50%>
@@ -49,7 +53,7 @@ or any distance and thickness below the surface...
 <img src="Images/012 Result and mask.JPG">
 
 ### All steps and settings (filters, threshold, surface postioning & timings) and recorded
-Each step takes only a few seconds, so the whole process is easy to fine tune.
+
 <img src="Images/011 paramters and timings in the log.JPG">
 
 Thanks to Stephane Verger for making [SurfCut](https://github.com/sverger/SurfCut) freely available. SurfacePeeler macro uses an adaptation of the cumulative maximal projection from SurfCut to generate a solid volume of the input image. 
