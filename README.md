@@ -11,6 +11,10 @@ The mask moves up or down perpendicular to the surface following the local surfa
 
 Each step takes only a few seconds, so the whole process is easy to fine tune, and you are presented with previews of each step to decide whether to repeat or proceed.
 
+It does this:
+
+<img src="https://github.com/DaleMoulding/Fiji-Macros/blob/master/Images/SurfExtPic2.gif">
+
 ### Step 1 Threshold the image - choose a filter (Gaussian, Median etc) and threshold algorithm
 <img src="Images/001%20Combined%20multi%20channel%20image%20to%20threshold.JPG" width=50% height=50%>
 
@@ -52,10 +56,13 @@ or any distance and thickness below the surface...
 <img src="Images/010 select the image to peel.JPG" width=50% height=50%>
 <img src="Images/012 Result and mask.JPG">
 
-### All steps and settings (filters, threshold, surface postioning & timings) and recorded
+### All steps and settings (filters, threshold, surface positioning & timings) and recorded
 
 <img src="Images/011 paramters and timings in the log.JPG">
 
 Thanks to Stephane Verger for making [SurfCut](https://github.com/sverger/SurfCut) freely available. SurfacePeeler macro uses an adaptation of the cumulative maximal projection from SurfCut to generate a solid volume of the input image. 
-Thanks to Robert Haase for help with implementing fast erosions and dilations using Clij2 via the [Image.sc forum](https://forum.image.sc/t/clij-3d-maxima-or-3d-dilate-multiple-iterations-as-a-loop/57496)
+
+Thanks to Robert Haase for help with implementing fast erosions and dilations using Clij2 via the [Image.sc forum](https://forum.image.sc/t/clij-3d-maxima-or-3d-dilate-multiple-iterations-as-a-loop/57496).
+
+Thanks to [Gabe Galea](https://www.ucl.ac.uk/child-health/research/developmental-biology-and-cancer/developmental-biology-birth-defects/website-profiles/staff) for test images.
 
