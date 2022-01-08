@@ -62,7 +62,7 @@ or any distance and thickness below the surface...
 
 Thanks to Stephane Verger for making [SurfCut](https://github.com/sverger/SurfCut) freely available. SurfacePeeler macro uses an adaptation of the cumulative maximal projection from SurfCut to generate a solid volume of the input image. 
 
-Thanks to Robert Haase for help with implementing fast erosions and dilations using Clij2 via the [Image.sc forum](https://forum.image.sc/t/clij-3d-maxima-or-3d-dilate-multiple-iterations-as-a-loop/57496).
+Thanks to [Robert Haase](https://github.com/haesleinhuepf) for help with implementing fast erosions and dilations using Clij2 via the [Image.sc forum](https://forum.image.sc/t/clij-3d-maxima-or-3d-dilate-multiple-iterations-as-a-loop/57496).
 
 Thanks to [Gabe Galea](https://www.ucl.ac.uk/child-health/research/developmental-biology-and-cancer/developmental-biology-birth-defects/website-profiles/staff) for test images.
 
