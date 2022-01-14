@@ -66,3 +66,26 @@ Thanks to [Robert Haase](https://github.com/haesleinhuepf) for help with impleme
 
 Thanks to [Gabe Galea](https://www.ucl.ac.uk/child-health/research/developmental-biology-and-cancer/developmental-biology-birth-defects/website-profiles/staff) for test images.
 
+___
+
+## How it works
+
+#### Filter and threshold the input image, use a simple binary erode, fill all pixels below the top surface, subtract to generate a 3D contour tracing the surface
+Fill all pixels below top surface uses a Cumulative Maximal Projection based on Stepane Verger's [SurfCut](https://github.com/sverger/SurfCut)
+<img src="Images/Slide1.JPG">
+
+#### You can then adjust the thickness and placement of the 'peel' up or down to generate any thickness peel at any height perpendicalur to the surface
+<img src="Images/Slide2.JPG">
+
+#### A combination of Maximum or Minimum Filters are used to move the 'peel'. Here it is moved down below the surface...
+<img src="Images/Slide3.JPG">
+
+#### Here the upper bound of the peel is moved up above the surface, and the peel also expands below the surface...
+<img src="Images/Slide4.JPG">
+
+#### Here the 'peel' is moved up away from the surface...
+<img src="Images/Slide5.JPG">
+
+#### Maximum / Minimum filters are typically very slow. This macro uses the GPU and CLIJ2 to do it iteratively, 1 pixel at a time, using a sphere then a cube structuring element
+This allows placement ofd the 'peel' at any position relative to the surface in seconds rather than minutes.
+<img src="Images/Slide6.JPG">
