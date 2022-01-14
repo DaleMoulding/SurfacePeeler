@@ -55,6 +55,7 @@ or any distance and thickness below the surface...
 ### Step 4 Select the image you want to apply the mask to & a 3D contour layer is peeled from your image
 <img src="Images/010 select the image to peel.JPG" width=50% height=50%>
 <img src="Images/012 Result and mask.JPG">
+You are also left with the mask images (single pixel thick surface countour, filled solid image, your adjusted surface peel mask) so you can save / use these again if you wish.
 
 ### All steps and settings (filters, threshold, surface positioning & timings) and recorded
 
