@@ -1,5 +1,5 @@
 // macro released under MIT License MIT License Copyright (c) 2022 DaleMoulding
-//See website belwo forfull license details
+//See website below for full license details
 //https://github.com/DaleMoulding/SurfacePeeler/blob/main/LICENSE
 
 
