@@ -37,7 +37,7 @@
 // v203 combine channels for final image in the background
 // v204 close unneeded windows when finsihed
 // v205 Add MIT license and deposit on GitHub
-// v206 remove the predifend graphics card for CLIJ2 on lines 355 377 389.
+// v206 remove the predefined graphics card for CLIJ2 on lines 355 377 389.
 
 
 saveSettings(); //save imagej settings , resotre at end of macro
