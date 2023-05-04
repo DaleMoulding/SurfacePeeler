@@ -1,7 +1,7 @@
 # SurfacePeeler
 Version 2 of the macro to extract the surface layer of 3D volumetric images
 
-[Link to SurfacePeeler Macro](https://raw.githubusercontent.com/DaleMoulding/SurfacePeeler/main/SurfacePeelerCombined_v205.ijm)
+[Link to SurfacePeeler Macro](https://raw.githubusercontent.com/DaleMoulding/SurfacePeeler/main/SurfacePeelerCombined_v206.ijm)
 
 This macro will take a single or multi channel image, and generate a mask following the upper surface of a 3D volumetric image.
 
