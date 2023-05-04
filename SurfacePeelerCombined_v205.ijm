@@ -37,6 +37,7 @@
 // v203 combine channels for final image in the background
 // v204 close unneeded windows when finsihed
 // v205 Add MIT license and deposit on GitHub
+// v206 remove the predifend graphics card for CLIJ2 on lines 355 377 389.
 
 
 saveSettings(); //save imagej settings , resotre at end of macro
@@ -351,7 +352,7 @@ while(BadPeelings){
 
 	// set the bounds (maximum displacement)
 	// Is either the upper or lower surface.
-			run("CLIJ2 Macro Extensions", "cl_device=[GeForce GTX 1050]"); //v201
+			run("CLIJ2 Macro Extensions", "cl_device=[]"); //v201
 			Ext.CLIJ2_clear();
 			image1="UpperSurfacePeelings";
 			Ext.CLIJ2_push(image1);
@@ -373,7 +374,7 @@ while(BadPeelings){
 				// if upper surface is to be moved down then:
 					if (Upper >0) {	
 						//minimum / erode by value = Upper
-						run("CLIJ2 Macro Extensions", "cl_device=[GeForce GTX 1050]");
+						run("CLIJ2 Macro Extensions", "cl_device=[]");
 						Ext.CLIJ2_clear();
 						image1="CumulativeMaxP";
 						Ext.CLIJ2_push(image1);
@@ -385,7 +386,7 @@ while(BadPeelings){
 				// if upper surface is to be moved up then:
 					if (Upper <0) {	
 						//maximum / dilate by value = -Upper
-						run("CLIJ2 Macro Extensions", "cl_device=[GeForce GTX 1050]");
+						run("CLIJ2 Macro Extensions", "cl_device=[]");
 						Ext.CLIJ2_clear();
 						image1="CumulativeMaxP";
 						Ext.CLIJ2_push(image1);
